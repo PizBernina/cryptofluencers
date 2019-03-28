@@ -14,4 +14,6 @@ By Riley, Claudio & Robin
 
 -Node.js 10.15.3 (for npm)
 
+-Particle.js (npm, for the background)
+
 -Bootstrap v4.0.0
