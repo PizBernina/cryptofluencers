@@ -12,4 +12,6 @@ By Riley, Claudio & Robin
 
 -Django 2.1.5
 
+-Node.js 10.15.3 (for npm)
+
 -Bootstrap v4.0.0
