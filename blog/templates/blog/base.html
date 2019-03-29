@@ -1,6 +1,7 @@
 {%load static%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,8 +17,12 @@
     {% else %}
         <title>Blog</title>
     {% endif %}
+
+
 </head>
 <body>
+<div id="particles-js"></div>
+ <script type="text/javascript" src="static/blog/particles.js"></script>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
           <div class="container">
@@ -33,7 +38,7 @@
               <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
               <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
             </div>
-            <!-- Navbar Right Side -->
+            <!-- AdBar Right Side -->
             <div class="navbar-nav">
               {% if user.is_authenticated %}
                 <a class="nav-item nav-link" href="{% url 'post-create' %}">New Post</a>
@@ -62,8 +67,8 @@
         </div>
         <div class="col-md-4">
           <div class="content-section">
-            <h3>Cryptolicious Sidebar</h3>
-            <p class='text-muted'>Wer das liest ist doof.
+            <h3>Your Ad here</h3>
+            <p class='text-muted'>Here could be your ad.
               <ul class="list-group">
                 <li class="list-group-item list-group-item-light">Latest Posts</li>
                 <li class="list-group-item list-group-item-light">Announcements</li>
@@ -76,7 +81,11 @@
       </div>
     </main>
     <center><small>Copyright &copy; Cryptofluencers.io - All Rights Reserved</small></center>
-    <!-- Optional JavaScript -->
+    <!-- Particles JavaScript (Background)-->
+    <script>particlesJS.load('particles-js', 'static/blog/particles.json', function() {
+     console.log('callback - particles.js config loaded');
+    });</script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

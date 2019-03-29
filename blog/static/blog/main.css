@@ -1,5 +1,7 @@
+#particles-js{ position:absolute; width: 100%; height: 100%; background-color: #b61924; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
 body {
-  background: #fafafa;
+  Background: #b61924;
   color: #333333;
   margin-top: 5rem;
 }
@@ -12,8 +14,8 @@ ul {
   margin: 0;
 }
 
-.bg-steel {
-  background-color: #5f788a;
+.bg-steel{
+  background-color: #0f0000;
 }
 
 .site-header .navbar-nav .nav-link {
