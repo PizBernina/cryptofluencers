@@ -12,6 +12,8 @@ By Riley, Claudio & Robin
 
 -Django 2.1.5
 
+-Pillow
+
 -Node.js 10.15.3 (for npm)
 
 -Particle.js (npm, for the background)
