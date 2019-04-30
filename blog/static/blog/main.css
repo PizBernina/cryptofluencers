@@ -2,7 +2,7 @@
     position:absolute;
     width: 100%;
     height: 100%;
-    background-color: #b61924;
+    background-color: #332b2b;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +10,7 @@
 }
 
 body {
-  Background: #b61924;
+  Background: #332b2b;
   color: #342425;
   margin-top: 5rem;
 }
@@ -93,3 +93,6 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+
+
