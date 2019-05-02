@@ -1,4 +1,4 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 
@@ -22,12 +22,12 @@
 </head>
 <body>
 <div id="particles-js"></div>
- <script type="text/javascript" src="static/blog/particles.js"></script>
+ <script type="text/javascript" src="{% static "blog/particles.js" %}"></script>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
           <div class="container">
              <a class="navbar-brand" href="#">
-                <img src=".../../media/brandlogo.png" alt="Brand" style="width:40px;">
+                <img src="{% static "users/brandlogo.jpg" %}"  alt="Brand" style="width:40px;">
              </a>
              <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Cryptofluencers</a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,7 @@
     </main>
     <center><small>Copyright &copy; Cryptofluencers.io - All Rights Reserved</small></center>
     <!-- Particles JavaScript (Background)-->
-    <script>particlesJS.load('particles-js', 'static/blog/particles.json', function() {
+    <script>particlesJS.load('particles-js', '{% static "blog/particles.json" %}', function() {
      console.log('callback - particles.js config loaded');
     });</script>
 
